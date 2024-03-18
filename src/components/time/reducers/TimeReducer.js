@@ -25,12 +25,12 @@ const TimeReducer = (state = {time : {currentTime : 0}}, action)=>{
     switch(action.type){
         case TIMEACTION.update:
             state.time.currentTime = getCurrentTime();
-            return state;
+            return (state)
         case TIMEACTION.init:
             state.time.currentTime = getCurrentTime();
-            return state;
+            return (state);
         default:
-            return state
+            return (state)
     }
 }
 
